@@ -10,4 +10,3 @@ skillMetadata:
         - name: pin_number
           type: number
           label: PIN where the LED is connected to
-          placeholder: "20"
