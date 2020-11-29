@@ -7,8 +7,6 @@ import RPi.GPIO as GPIO
 class WakeWordLedGpio(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        self.settings_change_callback = self.on_settings_changed
-        self.on_settings_changed()
 
     def on_settings_changed(self):
         self.pin_mode = self.settings.get('pin_mode').upper()
@@ -17,6 +15,9 @@ class WakeWordLedGpio(MycroftSkill):
         self.log.info('LED PIN number set to {}'.format(self.pin_number))
 
     def initialize(self):
+        self.settings_change_callback = self.on_settings_changed
+        self.on_settings_changed()
+
         try:
             GPIO.setmode(eval('GPIO.{}'.format(self.pin_mode)))
             GPIO.setwarnings(False)
