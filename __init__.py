@@ -18,8 +18,8 @@ class WakeWordLedGpio(MycroftSkill):
             GPIO.setwarnings(False)
             GPIO.setup(self.pin_number, GPIO.OUT)
         except GPIO.error:
-            self.log.warning("Cannot initialize GPIO - skill will not load")
-            self.speak_dialog("error.initialize")
+            self.log.warning('Cannot initialize GPIO - skill will not load')
+            self.speak_dialog('error.initialize')
         finally:
             self.add_event('recognizer_loop:record_begin',
                            self.handle_listener_started)
