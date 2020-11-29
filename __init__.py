@@ -7,8 +7,8 @@ import RPi.GPIO as GPIO
 class WakeWordLedGpio(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        self.pin_mode = self.settings.get('pin_mode')
-        self.pin_number = self.settings.get('pin_number')
+        self.pin_mode = self.settings.get('pin_mode', 'bcm')
+        self.pin_number = self.settings.get('pin_number', 20)
 
     def initialize(self):
         try:
