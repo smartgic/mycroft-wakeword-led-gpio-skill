@@ -14,7 +14,7 @@ class WakeWordLedGpio(MycroftSkill):
 
     def initialize(self):
         try:
-            GPIO.setmode(self.pin_mode)
+            GPIO.setmode(eval('GPIO.self.pin_mode'))
             GPIO.setwarnings(False)
             GPIO.setup(self.pin_number, GPIO.OUT)
         except GPIO.error:
