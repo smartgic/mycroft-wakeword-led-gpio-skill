@@ -1,4 +1,7 @@
-from mycroft import MycroftSkill, intent_file_handler
+from mycroft import MycroftSkill
+from mycroft.messagebus.message import Message
+
+import RPi.GPIO as GPIO
 
 
 class WakeWordLedGpio(MycroftSkill):
