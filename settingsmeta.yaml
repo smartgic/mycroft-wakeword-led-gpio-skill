@@ -1,22 +1,14 @@
-
 skillMetadata:
   sections:
-    - name: Options << Name of section
+    - name: Configuration
       fields:
-        - name: internal_python_variable_name
-          type: text
-          label: Setting Friendly Display Name
-          value: ""
-          placeholder: demo prompt in the input box
-    - name: Login << Name of another section
-      fields:
-        - type: label
-          label: Just a little bit of extra info for the user to understand following settings
-        - name: username
-          type: text
-          label: Username
-          value: ""
-        - name: password
-          type: password
-          label: Password
-          value: ""
+        - name: pin_mode
+          type: select
+          label: Use GPIO number or pin number
+          options: "BCM|bcm;BOARD|board"
+          value: bcm
+        - name: pin_number
+          type: number
+          label: PIN where the LED is connected to
+          value: 23
+          placeholder: "Example: 20"
