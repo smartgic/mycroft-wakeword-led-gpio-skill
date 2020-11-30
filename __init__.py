@@ -34,10 +34,10 @@ class WakeWordLedGpio(MycroftSkill):
             GPIO.cleanup()
 
     def handle_listener_started(self, message):
-        GPIO.output(self.pin_number, GPIO.HIGH)
+        GPIO.output(self.pin_number, GPIO.LOW)
 
     def handle_listener_ended(self, message):
-        GPIO.output(self.pin_number, GPIO.LOW)
+        GPIO.output(self.pin_number, GPIO.HIGH)
 
 
 def create_skill():
