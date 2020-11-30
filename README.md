@@ -4,7 +4,7 @@ A light indicator for Mycroft on Raspberry Pi
 
 ## About
 
-The [Raspberry Pi](https://rapsberrypi.org) is a tiny and affordable computer that you can use to interact with `GPIO` (General Purpose Input/Output) such as button, sensor, LED, etc...
+The [Raspberry Pi](https://rapsberrypi.org) is a tiny and affordable computer that you can use to interact with `GPIO` *(General Purpose Input/Output)* such as button, sensor, LED, etc...
 
 This skill interacts with a LED to let you know if Mycroft is listening. When a wake word is detected the LED is turning on and when the recording is done the LED is turning off.
 
