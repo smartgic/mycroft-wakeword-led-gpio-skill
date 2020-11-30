@@ -9,8 +9,8 @@ class WakeWordLedGpio(MycroftSkill):
         MycroftSkill.__init__(self)
 
     def on_settings_changed(self):
-        self.pin_mode = self.settings.get('pin_mode').upper()
-        self.pin_number = self.settings.get('pin_number')
+        self.pin_mode = self.settings.get('pin_mode', 'board').upper()
+        self.pin_number = self.settings.get('pin_number', 10)
         self.log.info('PIN mode set to {}'.format(self.pin_mode))
         self.log.info('LED PIN number set to {}'.format(self.pin_number))
 
