@@ -1,3 +1,5 @@
+<img src="https://travis-ci.org/smartgic/mycroft-wakeword-led-gpio.svg?branch=master"/>
+
 # <img src="docs/raspberry-pi.png" card_color="#0000" width="50" height="60" style="vertical-align:bottom"/> Wake Word GPIO LED
 
 A light indicator for Mycroft on Raspberry Pi
