@@ -6,7 +6,7 @@ A light indicator for Mycroft on Raspberry Pi
 
 ## About
 
-The [Raspberry Pi](https://rapsberrypi.org) is a tiny and affordable computer that you can use to interact with `GPIO` *(General Purpose Input/Output)* such as button, sensor, LED, etc...
+The [Raspberry Pi](https://rapsberrypi.org) is a tiny and affordable computer that you can use to interact with `GPIO` _(General Purpose Input/Output)_ such as button, sensor, LED, etc...
 
 This skill interacts with a LED to let you know if Mycroft is listening. When a wake word is detected the LED is turning on and when the recording is done the LED is turning off.
 
@@ -14,9 +14,18 @@ This skill interacts with a LED to let you know if Mycroft is listening. When a 
 
 There is no example because there is no interaction with the Mycroft.
 
+## Installation
+
+Make sure to be within the Mycroft `virtualenv` before running the `msm` command.
+
+```
+$ . mycroft-core/venv-activate.sh
+$ msm install https://github.com/smartgic/mycroft-wakeword-led-gpio.git
+```
+
 ## Configuration
 
-This skill utilizes the `skillsettings.json` file which allows you to configure this skill via `home.mycroft.ai` after a few seconds of having the skill installed you should see something like below in the https://home.mycroft.ai/#/skill location:
+This skill utilizes the `settings.json` file which allows you to configure this skill via `home.mycroft.ai` after a few seconds of having the skill installed you should see something like below in the https://home.mycroft.ai/#/skill location:
 
 <img src='docs/wakeword-led-gpio-config.png' width='450'/>
 
