@@ -1,4 +1,4 @@
-# <img src="docs/raspberry-pi.png" card_color="#0000" width="50" height="50" style="vertical-align:bottom"/> Wake Word GPIO LED
+# <img src="docs/raspberry-pi.png" card_color="#0000" width="50" height="60" style="vertical-align:bottom"/> Wake Word GPIO LED
 
 A light indicator for Mycroft on Raspberry Pi
 
@@ -16,7 +16,7 @@ There is no example because there is no interaction with the Mycroft.
 
 This skill utilizes the `skillsettings.json` file which allows you to configure this skill via `home.mycroft.ai` after a few seconds of having the skill installed you should see something like below in the https://home.mycroft.ai/#/skill location:
 
-<img src='docs/home-wakeword-led-gpio-config.png' width='450'/>
+<img src='docs/wakeword-led-gpio-config.png' width='450'/>
 
 Fill this out with your appropriate information and hit save.
 
