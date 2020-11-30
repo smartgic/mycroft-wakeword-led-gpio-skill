@@ -31,7 +31,6 @@ class WakeWordLedGpio(MycroftSkill):
                            self.handle_listener_started)
             self.add_event('recognizer_loop:record_end',
                            self.handle_listener_ended)
-            GPIO.cleanup()
 
     def handle_listener_started(self, message):
         GPIO.output(self.pin_number, GPIO.LOW)
