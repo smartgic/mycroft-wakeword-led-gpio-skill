@@ -2,6 +2,8 @@ from mycroft import MycroftSkill
 
 import RPi.GPIO as GPIO
 
+__author__ = 'smartgic'
+
 
 class WakeWordLedGpio(MycroftSkill):
     def __init__(self):
