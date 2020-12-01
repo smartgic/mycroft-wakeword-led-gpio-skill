@@ -23,10 +23,10 @@ class WakeWordLedGpio(MycroftSkill):
 
     def initialize(self):
         self.settings_change_callback = self.on_websettings_changed
-        self.on_websettings_changed()
+        self._setup()
 
     def on_websettings_changed(self):
-        self._setup()
+        self.initialize()
         self._run()
 
     def _run(self):
