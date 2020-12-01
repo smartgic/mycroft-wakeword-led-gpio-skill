@@ -8,6 +8,8 @@ __author__ = 'smartgic'
 class WakeWordLedGpio(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
+
+        # By default the skill requires configuration
         self.configured = False
 
     def _setup(self):
@@ -25,15 +27,19 @@ class WakeWordLedGpio(MycroftSkill):
 
         self.log.info('PIN mode set to {}'.format(self.pin_mode))
 
+    # See https://bit.ly/37pwxIC (Mycroft documentation about skill lifecycle)
     def initialize(self):
+        # Callback when setting changes are detected from home.mycroft.ai
         self.settings_change_callback = self.on_websettings_changed
         self.on_websettings_changed()
 
+    # What to do in case of setting changes detected
     def on_websettings_changed(self):
         self._setup()
         self._run()
 
     def _run(self):
+        # Run only when the skill is properly configured
         if self.configured:
             try:
                 # Setup GPIO
@@ -50,9 +56,11 @@ class WakeWordLedGpio(MycroftSkill):
                 self.log.error('Cannot initialize GPIO - skill will not load')
                 self.speak_dialog('error.initialize')
 
+    # Turn on LED
     def _handle_listener_started(self, message):
         GPIO.output(self.pin_number, GPIO.HIGH)
 
+    # Turn off LED
     def _handle_listener_ended(self, message):
         GPIO.output(self.pin_number, GPIO.LOW)
 
