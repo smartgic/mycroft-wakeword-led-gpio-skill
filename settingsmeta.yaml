@@ -6,8 +6,8 @@ skillMetadata:
           type: select
           label: Use GPIO number or pin number
           options: "BCM|bcm;BOARD|board"
-          value: bcm
+          value: "bcm"
         - name: pin_number
           type: number
           label: PIN where the LED is connected to
-          value:
+          value: ""
