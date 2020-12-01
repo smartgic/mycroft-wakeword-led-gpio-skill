@@ -2,7 +2,7 @@
 
 # <img src="docs/raspberry-pi.png" card_color="#0000" width="50" height="60" style="vertical-align:bottom"/> Wake Word GPIO LED
 
-A light *(LED)* indicator for Mycroft on Raspberry Pi
+A light _(LED)_ indicator for Mycroft on Raspberry Pi
 
 ## About
 
@@ -20,7 +20,7 @@ Make sure to be within the Mycroft `virtualenv` before running the `msm` command
 
 ```
 $ . mycroft-core/venv-activate.sh
-$ msm install https://github.com/smartgic/mycroft-wakeword-led-gpio.git
+$ msm install https://github.com/smartgic/mycroft-wakeword-led-gpio-skill.git
 ```
 
 ## Configuration
