@@ -27,7 +27,7 @@ class WakeWordLedGpio(MycroftSkill):
         self.settings_change_callback = self.on_settings_changed
         self._setup()
 
-        if self.pin_number:
+        if self.settings.get('pin_number'):
             try:
                 # Setup GPIO
                 GPIO.setmode(eval('GPIO.{}'.format(self.pin_mode)))
