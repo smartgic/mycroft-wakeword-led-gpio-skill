@@ -1,5 +1,4 @@
 from mycroft import MycroftSkill
-from mycroft.messagebus.message import Message
 
 import RPi.GPIO as GPIO
 
