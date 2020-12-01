@@ -21,13 +21,13 @@ class WakeWordLedGpio(MycroftSkill):
 
         self.log.info('PIN mode set to {}'.format(self.pin_mode))
 
-    def on_settings_changed(self):
+    def on_websettings_changed(self):
         self._setup()
         self._run()
 
     def initialize(self):
-        self.settings.set_changed_callback(self.on_settings_changed)
-        self.on_settings_changed()
+        self.settings_change_callback = self.on_websettings_changed
+        self.on_websettings_changed()
 
     def _run(self):
         if self.configured:
