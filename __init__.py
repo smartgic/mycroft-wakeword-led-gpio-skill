@@ -5,7 +5,6 @@ import RPi.GPIO as GPIO
 
 class WakeWordLedGpio(MycroftSkill):
     def __init__(self):
-        MycroftSkill.__init__(self)
         self.configured = False
 
     def _setup(self):
