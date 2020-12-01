@@ -17,9 +17,9 @@ class WakeWordLedGpio(MycroftSkill):
             self.log.warning('PIN number is not configured')
             pass
         else:
+            self.configured = True
             self.log.info('LED PIN number set to {}'.format(self.pin_number))
 
-        self.configured = True
         self.log.info('PIN mode set to {}'.format(self.pin_mode))
 
     def on_settings_changed(self):
