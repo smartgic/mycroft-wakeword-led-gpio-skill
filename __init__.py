@@ -14,10 +14,12 @@ class WakeWordLedGpio(MycroftSkill):
 
         if not self.pin_number:
             self.speak_dialog('error.setup', data={"field": "pin"})
-            return
+            self.log.warning('PIN number is not configured')
+            pass
+        else:
+            self.log.info('LED PIN number set to {}'.format(self.pin_number))
 
         self.log.info('PIN mode set to {}'.format(self.pin_mode))
-        self.log.info('LED PIN number set to {}'.format(self.pin_number))
 
     def on_settings_changed(self):
         self._setup()
