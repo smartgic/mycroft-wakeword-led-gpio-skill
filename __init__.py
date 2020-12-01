@@ -17,6 +17,7 @@ class WakeWordLedGpio(MycroftSkill):
             pass
         else:
             self.log.info('LED PIN number set to {}'.format(self.pin_number))
+            pass
 
         self.log.info('PIN mode set to {}'.format(self.pin_mode))
 
