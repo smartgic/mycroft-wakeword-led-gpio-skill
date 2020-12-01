@@ -26,8 +26,8 @@ class WakeWordLedGpio(MycroftSkill):
         self._run()
 
     def initialize(self):
-        self._setup()
         self.settings_change_callback = self.on_settings_changed
+        self.on_settings_changed()
 
     def _run(self):
         if self.configured:
