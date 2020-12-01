@@ -46,7 +46,7 @@ class WakeWordLedGpio(MycroftSkill):
                                self._handle_listener_started)
                 self.add_event('recognizer_loop:record_end',
                                self._handle_listener_ended)
-            except:
+            except Exception:
                 self.log.error('Cannot initialize GPIO - skill will not load')
                 self.speak_dialog('error.initialize')
 
