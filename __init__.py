@@ -11,7 +11,9 @@ class WakeWordLedGpio(MycroftSkill):
         self.configured = False
 
     def _setup(self):
-        self.pin_mode = self.settings.get('pin_mode', 'board').upper()
+        # By default the GPIO module will be configured with BCM
+        # https://raspberrypi.stackexchange.com/a/12967
+        self.pin_mode = self.settings.get('pin_mode', 'bcm').upper()
         self.pin_number = self.settings.get('pin_number')
 
         if not self.pin_number:
