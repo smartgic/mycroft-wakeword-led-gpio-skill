@@ -45,10 +45,10 @@ class WakeWordLedGpio(MycroftSkill):
                 self.speak_dialog('error.initialize')
 
     def _handle_listener_started(self, message):
-        GPIO.output(self.pin_number, GPIO.LOW)
+        GPIO.output(self.pin_number, GPIO.HIGH)
 
     def _handle_listener_ended(self, message):
-        GPIO.output(self.pin_number, GPIO.HIGH)
+        GPIO.output(self.pin_number, GPIO.LOW)
 
 
 def create_skill():
