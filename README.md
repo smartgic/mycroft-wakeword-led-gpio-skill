@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.com/smartgic/mycroft-wakeword-led-gpio-skill.svg?branch=20.08)](https://travis-ci.com/github/smartgic/mycroft-wakeword-led-gpio-skill) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-pink.svg?style=flat)](https://github.com/smartgic/mycroft-wakeword-led-gpio-skill//pulls) [![Skill: MIT](https://img.shields.io/badge/mycroft.ai-skill-blue)](https://mycroft.ai)
+[![Build Status](https://travis-ci.com/smartgic/mycroft-wakeword-led-gpio-skill.svg?branch=20.08)](https://travis-ci.com/github/smartgic/mycroft-wakeword-led-gpio-skill) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-pink.svg?style=flat)](https://github.com/smartgic/mycroft-wakeword-led-gpio-skill//pulls) [![Skill: MIT](https://img.shields.io/badge/mycroft.ai-skill-blue)](https://mycroft.ai) [![Discord](https://img.shields.io/discord/687207715902193673)](https://discord.gg/Vu7Wmd9j) 
 
 
 # <img src="docs/raspberry-pi.png" card_color="#0000" width="50" height="60" style="vertical-align:bottom"/> Wake Word GPIO LED
