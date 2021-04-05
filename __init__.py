@@ -7,7 +7,7 @@ __author__ = 'smartgic'
 
 
 class WakeWordLedGpio(MycroftSkill):
-    """This is the place where all the magic happens for the 
+    """This is the place where all the magic happens for the
     wake word LED GPIO skill.
     """
 
