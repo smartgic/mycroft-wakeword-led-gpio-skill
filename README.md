@@ -1,16 +1,16 @@
 
-[![Build Status](https://travis-ci.com/smartgic/mycroft-wakeword-led-gpio-skill.svg?branch=20.08)](https://travis-ci.com/github/smartgic/mycroft-wakeword-led-gpio-skill) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-pink.svg?style=flat)](https://github.com/smartgic/mycroft-wakeword-led-gpio-skill//pulls) [![Skill: MIT](https://img.shields.io/badge/mycroft.ai-skill-blue)](https://mycroft.ai) [![Discord](https://img.shields.io/discord/809074036733902888)](https://discord.gg/Vu7Wmd9j) 
+[![Build Status](https://travis-ci.com/smartgic/mycroft-wakeword-led-gpio-skill.svg?branch=20.8.1)](https://travis-ci.com/github/smartgic/mycroft-wakeword-led-gpio-skill) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-pink.svg?style=flat)](https://github.com/smartgic/mycroft-wakeword-led-gpio-skill//pulls) [![Skill: MIT](https://img.shields.io/badge/mycroft.ai-skill-blue)](https://mycroft.ai) [![Discord](https://img.shields.io/discord/809074036733902888)](https://discord.gg/Vu7Wmd9j) 
 
 
 # <img src="docs/raspberry-pi.png" card_color="#0000" width="50" height="60" style="vertical-align:bottom"/> Wake Word GPIO LED
 
-A light _(LED)_ indicator for Mycroft on Raspberry Pi
+A light _(LED)_ indicator for Mycroft on Raspberry Pi.
 
 ## About
 
 The [Raspberry Pi](https://rapsberrypi.org) is a tiny and affordable computer that you can use to interact with `GPIO` _(General Purpose Input/Output)_ such as button, sensor, LED, etc...
 
-This skill interacts with a LED to let you know if Mycroft is listening. When a wake word is detected the LED is turning on and when the recording is done the LED is turning off.
+This skill interacts with a LED connected to a GPIO to let you know if Mycroft is listening. When a wake word is detected the LED is turning on and when the recording is done the LED is turning off.
 
 ## Examples
 
