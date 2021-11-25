@@ -9,5 +9,5 @@ skillMetadata:
           value: "bcm"
         - name: pin_number
           type: number
-          label: PIN where the LED is connected to
+          label: PIN number where the LED is connected to
           value: ""
